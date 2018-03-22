@@ -1,0 +1,26 @@
+{
+  "name": "evolve-migrator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_PATH=./src DEBUG=evolve-migrator:* nodemon index.js",
+    "lint": "eslint src",
+    "prettier": "prettier --write 'src/**/*.js'"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.17.0",
+    "debug": "^3.1.0",
+    "knex": "^0.14.4",
+    "lodash": "^4.17.4",
+    "pg": "^7.4.1",
+    "pg-query-stream": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "nodemon": "^1.17.2",
+    "prettier": "^1.11.1"
+  }
+}

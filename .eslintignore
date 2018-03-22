@@ -1,0 +1,6 @@
+**/vscode/**
+.env
+.eslintignore
+.gitignore
+Rockerfile
+yarn.lock
