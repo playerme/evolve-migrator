@@ -1,5 +1,5 @@
 const { publisher } = require('lib/gcp');
-const getReadableStream = require('getReadableStream');
+const getReadableDBStream = require('getReadableDBStream');
 
 const debug = require('debug')('evolve-migrator:handleSubscription');
 
@@ -25,7 +25,7 @@ module.exports = async function handleSubscription([subscription]) {
       )
     );
 
-    const stream = getReadableStream(table, evolve_id);
+    const stream = getReadableDBStream(table, evolve_id);
 
     stream.on('data', async data => {
       const dataToSend = {

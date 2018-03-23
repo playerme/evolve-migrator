@@ -1,10 +1,10 @@
 const knex = require('lib/db');
-const debug = require('debug')('evolve-migrator:getReadableStream');
+const debug = require('debug')('evolve-migrator:getReadableDBStream');
 
 /**
  * Returns a Readable Stream that streams a user's data in a specific table
  *
- * @param {*} table - name of table in evolve's database
+ * @param {*} table - name of table in evolve's databasew
  * @param {*} evolve_id - user_id in evolve's database
  */
 module.exports = (table, evolve_id) => {

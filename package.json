@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_PATH=./src DEBUG=evolve-migrator:* nodemon index.js",
+    "start": "NODE_PATH=./src DEBUG=evolve-migrator:* nodemon src/main.js",
     "lint": "eslint src",
     "prettier": "prettier --write 'src/**/*.js'"
   },
